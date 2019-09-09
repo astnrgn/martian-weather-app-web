@@ -3,7 +3,6 @@ import "../styling/Curiosity.css";
 
 class Curiosity extends Component {
   render() {
-    console.log(this.props.curiosityData);
     let curiosityWeather = this.props.curiosityData.map((day, index) => {
       if (index <= 6) {
         return (
@@ -18,7 +17,11 @@ class Curiosity extends Component {
     });
     return (
       <div className="curiosity-page">
-        <h1>{this.props.curiosityData.season}</h1>
+        {/* <h1>{this.props.curiosityData[0].season}</h1> */}
+        <div>
+          <h1>Month 3</h1>
+        </div>
+
         <div>{curiosityWeather}</div>
       </div>
     );
