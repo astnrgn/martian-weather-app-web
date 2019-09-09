@@ -6,11 +6,15 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: orange;
+  background: url("https://s3.amazonaws.com/psiu/wallpapers/heic0601a/heic0601a_desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bolder;
 }
-nav {
+/* nav {
   background: orange;
-}
+} */
 .home-information-flex {
   /* border: 1px solid blue; */
   display: flex;
@@ -18,7 +22,7 @@ nav {
   padding: 15vh 0 0;
 }
 .home-information-grid {
-  border: 2px solid black;
+  border: 3px solid #fbf7f5;
   /* border-radius: 5px; */
   display: flex;
   justify-content: center;
@@ -34,20 +38,20 @@ nav {
   grid-column: 1 / span 3;
   font-size: 2.5em;
   text-align: left;
+  color: #fbf7f5;
 }
 .curiosity-container {
-  border: 1px solid black;
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
 }
 .insight-container {
-  border: 1px solid black;
   grid-row: 3 / span 1;
   grid-column: 3 / span 1;
 }
 .insight-container,
 .curiosity-container {
   font-size: 3vh;
+  border: 1px solid #fbf7f5;
 }
 .insight-container a,
 .curiosity-container a {
@@ -56,11 +60,12 @@ nav {
 }
 .insight-container:hover,
 .curiosity-container:hover {
-  background: grey;
+  background: rgba(251, 247, 245, 0.2);
 }
 .title-description {
   margin: 5% auto;
 }
 .home-description {
   margin: 2% 5%;
+  color: #fbf7f5;
 }
