@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./Curiosity.css";
+// import "./weatherView.css";
 
 class Curiosity extends Component {
   render() {

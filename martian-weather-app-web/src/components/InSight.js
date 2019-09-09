@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./InSight.css";
+// import "./weatherView.css";
 
 class InSight extends Component {
   render() {
