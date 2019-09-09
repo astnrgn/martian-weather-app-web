@@ -1,0 +1,40 @@
+.home-information-flex {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  margin: 20vh auto;
+}
+.home-information-grid {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 2vh 5vw;
+  display: grid;
+  grid-template-rows: 20vh 5vh 5vh;
+  grid-template-columns: 20vh 20vh 20vh;
+  text-align: center;
+}
+.title-container {
+  border: 1px solid black;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  font-size: 2.5em;
+}
+.curiosity-container {
+  border: 1px solid black;
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+.insight-container {
+  border: 1px solid black;
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+}
+.insight-container,
+.curiosity-container {
+  font-size: 1em;
+  display: inline;
+}
+.home-description {
+  margin: 5% auto;
+}
