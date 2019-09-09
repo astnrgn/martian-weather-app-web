@@ -5,12 +5,16 @@ class Curiosity extends Component {
   render() {
     let curiosityWeather = this.props.curiosityData.map((day, index) => {
       if (index <= 6) {
+        day.min_temp = Math.round(1.8 * day.min_temp + 32);
+        day.max_temp = Math.round(1.8 * day.max_temp + 32);
         return (
           <div key={index}>
             <p>Number of Days on Mars: {day.sol}</p>
             <p>Earth Day: {day.terrestrial_date}</p>
-            <p>Minimum (C): {day.min_temp}</p>
-            <p>Maximum (C): {day.max_temp}</p>
+            {/* <p>Minimum (C): {day.min_temp}</p>
+            <p>Maximum (C): {day.max_temp}</p> */}
+            <p>Minimum (F): {day.min_temp}</p>
+            <p>Maximum (F): {day.max_temp}</p>
           </div>
         );
       }
@@ -21,7 +25,9 @@ class Curiosity extends Component {
         <div>
           <h1>Month 3</h1>
         </div>
-
+        <div>
+          <h1>Curiosity Rover</h1>
+        </div>
         <div>{curiosityWeather}</div>
       </div>
     );
