@@ -8,13 +8,17 @@ class Home extends Component {
       <div className="home-information-flex">
         <div className="home-information-grid">
           <div className="title-container">
-            <p>4th Rock Weather</p>
+            <p className="title-description">4th Rock Weather</p>
           </div>
           <div className="curiosity-container">
-            <p className="home-description">Curiosity Rover</p>
+            <Link to="/curiosity">
+              <p className="home-description">Curiosity Rover</p>
+            </Link>
           </div>
           <div className="insight-container">
-            <p className="home-description">InSightLander</p>
+            <Link to="/insight">
+              <p className="home-description">InSight Lander</p>
+            </Link>
           </div>
         </div>
       </div>
