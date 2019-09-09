@@ -20,20 +20,20 @@ class App extends Component {
   render() {
     return (
       <div className="page">
-        <nav>
+        {/* <nav>
           <Link to="/">
             <div className="home-logo-container">
               <p className="home-logo">|-|</p>
             </div>
-          </Link>
+          </Link> */}
 
-          {/* <Link to="/curiosity">
+        {/* <Link to="/curiosity">
             <h3>Curiosity</h3>
           </Link>
           <Link to="/insight">
             <h3>InSight</h3>
           </Link> */}
-        </nav>
+        {/* </nav> */}
         <main>
           <Route path="/" exact component={Home} />
           <Route

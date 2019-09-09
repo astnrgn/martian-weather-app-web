@@ -1,11 +1,21 @@
-body {
+/* body {
   background: green;
+} */
+.homepage {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: orange;
+}
+nav {
+  background: orange;
 }
 .home-information-flex {
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
-  margin: 15vh 0 0;
+  padding: 15vh 0 0;
 }
 .home-information-grid {
   border: 2px solid black;

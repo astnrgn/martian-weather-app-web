@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-// import "./weatherView.css";
+import "../styling/InSight.css";
 
 class InSight extends Component {
   render() {
     return (
-      <div>
+      <div className="insight-page">
         <p>InSight</p>
       </div>
     );

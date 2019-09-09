@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-// import "./weatherView.css";
+import "../styling/Curiosity.css";
 
 class Curiosity extends Component {
   render() {
     return (
-      <div>
-        <p>Curiosity</p>
+      <div className="curiosity-page">
+        <div>
+          <p>Curiosity</p>
+        </div>
       </div>
     );
   }
