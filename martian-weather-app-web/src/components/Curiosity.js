@@ -8,27 +8,44 @@ class Curiosity extends Component {
         day.min_temp = Math.round(1.8 * day.min_temp + 32);
         day.max_temp = Math.round(1.8 * day.max_temp + 32);
         return (
-          <div key={index}>
-            <p>Number of Days on Mars: {day.sol}</p>
-            <p>Earth Day: {day.terrestrial_date}</p>
-            {/* <p>Minimum (C): {day.min_temp}</p>
-            <p>Maximum (C): {day.max_temp}</p> */}
-            <p>Minimum (F): {day.min_temp}</p>
-            <p>Maximum (F): {day.max_temp}</p>
+          <div className="curiosity-weather-divs" key={index}>
+            <p className="sol-number">Sol {day.sol}</p>
+            <p className="earth-date">{day.terrestrial_date}</p>
+            <p className="max-temp">{day.max_temp}°F</p>
+            <p className="min-temp">{day.min_temp}°F</p>
           </div>
         );
       }
     });
     return (
       <div className="curiosity-page">
-        {/* <h1>{this.props.curiosityData[0].season}</h1> */}
-        <div>
-          <h1>Month 3</h1>
+        <div className="weather-display-flex">
+          <div className="weather-display-grid">
+            {/* <h1>{this.props.curiosityData[0].season}</h1> */}
+            <div className="season-container">
+              <p className="season-title">Season</p>
+              <p>Month 3</p>
+            </div>
+            <div className="hover-container">
+              <p>display</p>
+            </div>
+            <div className="location-container">
+              <p>Curiosity Rover</p>
+              <span className="location-logo">&#9672;</span>
+              <p>Gale Crater</p>
+              {/* <p>Days on Mars: {this.props.curiosityData[0].sol} martian days</p> */}
+              <p>
+                <span className="days-on-mars">Days on Mars</span>: 2503 Sol
+              </p>
+              <a className="more-info-link" href="">
+                [More Info]
+              </a>
+            </div>
+            <div className="weather-list">
+              <div className="weather-flex">{curiosityWeather}</div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h1>Curiosity Rover</h1>
-        </div>
-        <div>{curiosityWeather}</div>
       </div>
     );
   }
