@@ -6,14 +6,15 @@ import Curiosity from "./Curiosity";
 import InSight from "./InSight";
 import "../styling/App.css";
 
-const searchUrl = "";
+const curiositySearchUrl = "";
+const inSightSearchUrl = "";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      curiosityWeather: [5],
-      inSightWeather: [5]
+      curiosityWeather: ["curiosityData"],
+      inSightWeather: ["inSightData"]
     };
   }
   render() {
