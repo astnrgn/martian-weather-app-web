@@ -22,14 +22,17 @@ class App extends Component {
       <div>
         <nav>
           <Link to="/">
-            <p>HOME</p>
+            <div className="home-logo-container">
+              <p className="home-logo">|-|</p>
+            </div>
           </Link>
-          <Link to="/curiosity">
+
+          {/* <Link to="/curiosity">
             <h3>Curiosity</h3>
           </Link>
           <Link to="/insight">
             <h3>InSight</h3>
-          </Link>
+          </Link> */}
         </nav>
         <main>
           <Route path="/" exact component={Home} />
