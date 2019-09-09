@@ -6,16 +6,42 @@ import Curiosity from "./Curiosity";
 import InSight from "./InSight";
 import "../styling/App.css";
 
-const curiositySearchUrl = "";
-const inSightSearchUrl = "";
+const curiositySearchUrl =
+  "https://pudding.cool/2017/12/mars-data/marsWeather.json";
+// const inSightSearchUrl =
+//   "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      curiosityWeather: ["curiosityData"],
-      inSightWeather: ["inSightData"]
+      curiosityWeather: [],
+      inSightWeather: []
     };
+  }
+  componentDidMount() {
+    axios
+      .get(curiositySearchUrl)
+      .then(response => {
+        this.setState({
+          curiosityWeather: response.data
+        });
+        console.log(this.state.curiosityWeather);
+      })
+      .catch(err => {
+        console.error(err);
+      });
+    // axios
+    //   .get(inSightSearchUrl)
+    //   .then(response => {
+    //     this.setState({
+    //       inSightWeather: response.data
+    //     });
+    //     console.log(this.state.inSightWeather);
+    //   })
+    //   .catch(err => {
+    //     console.error(err);
+    //   });
   }
   render() {
     return (

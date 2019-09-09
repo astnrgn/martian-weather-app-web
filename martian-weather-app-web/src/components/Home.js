@@ -9,7 +9,9 @@ class Home extends Component {
         <div className="home-information-flex">
           <div className="home-information-grid">
             <div className="title-container">
-              <p className="title-description">4th Rock Weather</p>
+              <p className="title-description">
+                4<sup>th</sup> Rock Weather
+              </p>
             </div>
             <div className="curiosity-container">
               <Link to="/curiosity">
