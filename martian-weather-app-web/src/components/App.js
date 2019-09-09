@@ -19,7 +19,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="page">
         <nav>
           <Link to="/">
             <div className="home-logo-container">

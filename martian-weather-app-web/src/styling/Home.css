@@ -1,8 +1,11 @@
+body {
+  background: green;
+}
 .home-information-flex {
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
-  margin: 15vh auto;
+  margin: 15vh 0 0;
 }
 .home-information-grid {
   border: 2px solid black;
