@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../styling/Curiosity.css";
-
 class Curiosity extends Component {
   render() {
     let curiosityWeather = this.props.curiosityData.map((day, index) => {
@@ -26,9 +25,11 @@ class Curiosity extends Component {
               <p className="season-title">Season</p>
               <p>Month 3</p>
             </div>
-            <div className="hover-container">
+            {/* <div className="hover-container">
+              {this.state.isHovering && <div>Hovering right meow! 🐱</div>}
               <p>display</p>
-            </div>
+              {this.state.hover}
+            </div> */}
             <div className="location-container">
               <p>Curiosity Rover</p>
               <span className="location-logo">&#9672;</span>
@@ -37,7 +38,11 @@ class Curiosity extends Component {
               <p>
                 <span className="days-on-mars">Days on Mars</span>: 2503 Sol
               </p>
-              <a className="more-info-link" href="">
+              <a
+                className="more-info-link"
+                href="https://mars.jpl.nasa.gov/msl/"
+                target="_blank"
+              >
                 [More Info]
               </a>
             </div>
