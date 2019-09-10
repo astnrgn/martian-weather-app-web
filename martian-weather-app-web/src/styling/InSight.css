@@ -6,7 +6,9 @@
   background: url("../images/insight.jpeg");
   /* background: black; */
   color: #fbf7f5;
-  /* background-size: cover; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: center;
   background-repeat: repeat-x;
   animation: animatedBackground 35s linear infinite;
 }
@@ -53,7 +55,7 @@
 .location-logo {
   margin: 0;
 }
-.more-info-link {
+.links {
   text-decoration: none;
   color: #fbf7f5;
   font-size: 0.7em;

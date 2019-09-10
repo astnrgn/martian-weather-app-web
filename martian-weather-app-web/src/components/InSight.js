@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../styling/InSight.css";
 
 class Insight extends Component {
@@ -43,12 +44,15 @@ class Insight extends Component {
                 Sol
               </p>
               <a
-                className="more-info-link"
+                className="links"
                 href="https://mars.nasa.gov/insight/weather/"
                 target="_blank"
               >
                 [More Info]
               </a>
+              <Link className="links" to="/">
+                <p>- Home - </p>
+              </Link>
             </div>
             <div className="weather-list">
               <div className="weather-flex">{insightWeather}</div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../styling/Curiosity.css";
 class Curiosity extends Component {
   render() {
@@ -35,12 +36,15 @@ class Curiosity extends Component {
               {/* <p>{this.props.curiosityData[0].sol} Sol</p> */}
               <p>2503 Sol</p>
               <a
-                className="more-info-link"
+                className="links"
                 href="https://mars.jpl.nasa.gov/msl/"
                 target="_blank"
               >
                 [More Info]
               </a>
+              <Link className="links" to="/">
+                <p>- Home - </p>
+              </Link>
             </div>
             <div className="weather-list">
               <div className="weather-flex">{curiosityWeather}</div>
