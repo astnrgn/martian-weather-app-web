@@ -6,10 +6,10 @@ import Curiosity from "./Curiosity";
 import InSight from "./InSight";
 import "../styling/App.css";
 
-const curiositySearchUrl =
-  "https://pudding.cool/2017/12/mars-data/marsWeather.json";
-// const inSightSearchUrl =
-//   "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0";
+// const curiositySearchUrl =
+//   "https://pudding.cool/2017/12/mars-data/marsWeather.json";
+const inSightSearchUrl =
+  "https://api.nasa.gov/insight_weather/?api_key=xM37sJTj9e3rcHJysfB3KnZrZk8aXmJH7BGzTzZd&feedtype=json&ver=1.0";
 
 class App extends Component {
   constructor(props) {
@@ -20,28 +20,30 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    axios
-      .get(curiositySearchUrl)
-      .then(response => {
-        this.setState({
-          curiosityWeather: response.data
-        });
-        console.log(this.state.curiosityWeather);
-      })
-      .catch(err => {
-        console.error(err);
-      });
     // axios
-    //   .get(inSightSearchUrl)
+    //   .get(curiositySearchUrl)
     //   .then(response => {
     //     this.setState({
-    //       inSightWeather: response.data
+    //       curiosityWeather: response.data
     //     });
-    //     console.log(this.state.inSightWeather);
+    //     console.log(this.state.curiosityWeather);
     //   })
     //   .catch(err => {
     //     console.error(err);
     //   });
+    axios
+      .get(inSightSearchUrl)
+      .then(response => {
+        console.log(response.data[265].AT.av);
+        console.log(response.data.JSO);
+        this.setState({
+          inSightWeather: response.data
+        });
+        console.log(this.state.inSightWeather);
+      })
+      .catch(err => {
+        console.error(err);
+      });
   }
   render() {
     return (
