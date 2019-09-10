@@ -3,11 +3,12 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
-  /* background: url("../images/insight.jpeg"); */
-  background: black;
+  background: url("../images/insight.jpeg");
+  /* background: black; */
   color: #fbf7f5;
+  /* background-size: cover; */
   background-repeat: repeat-x;
-  animation: animatedBackground 40s linear infinite;
+  animation: animatedBackground 35s linear infinite;
 }
 .weather-display-flex {
   display: flex;
