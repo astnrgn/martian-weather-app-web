@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../styling/Curiosity.css";
+import "../styling/weatherDisplay.css";
 class Curiosity extends Component {
   render() {
     let curiosityWeather = this.props.curiosityData.map((day, index) => {

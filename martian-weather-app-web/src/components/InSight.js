@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../styling/InSight.css";
+import "../styling/weatherDisplay.css";
 
 class Insight extends Component {
   render() {

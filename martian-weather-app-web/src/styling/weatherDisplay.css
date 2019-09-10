@@ -1,16 +1,23 @@
-.insight-page {
+.insight-page,
+.curiosity-page {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../images/insight.jpeg");
-  /* background: black; */
   color: #fbf7f5;
   background-position: center;
   background-size: cover;
   background-repeat: center;
   background-repeat: repeat-x;
-  animation: animatedBackground 35s linear infinite;
+  animation: animatedBackground 40s linear infinite;
+}
+.insight-page {
+  background: url("../images/insight.jpeg");
+  /* background: black; */
+}
+.curiosity-page {
+  background: url("../images/curiosity.jpeg");
+  /* background: black; */
 }
 .weather-display-flex {
   display: flex;
@@ -28,7 +35,8 @@
   grid-template-columns: 10vw 65vw 20vh;
   text-align: center;
 }
-.insight-weather-divs {
+.insight-weather-divs,
+.curiosity-weather-divs {
   /* border: 1px solid black; */
   text-align: center;
   padding: 3% 3%;
