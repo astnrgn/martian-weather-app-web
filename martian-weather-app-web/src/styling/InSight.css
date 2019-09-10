@@ -60,6 +60,9 @@
   color: #fbf7f5;
   font-size: 0.7em;
 }
+.links:hover {
+  color: black;
+}
 .weather-list {
   grid-row: 5 / span 1;
   grid-column: 1 / span 3;
