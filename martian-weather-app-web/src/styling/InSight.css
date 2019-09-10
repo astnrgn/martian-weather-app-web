@@ -3,7 +3,7 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
-  /* background: url("../images//insight.jpeg"); */
+  /* background: url("../images/insight.jpeg"); */
   background: black;
   color: #fbf7f5;
   background-repeat: repeat-x;
@@ -34,6 +34,7 @@
   /* border: 1px solid black; */
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
+  text-transform: capitalize;
 }
 .season-title {
   text-decoration: underline;

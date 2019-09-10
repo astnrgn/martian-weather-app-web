@@ -25,11 +25,6 @@ class Curiosity extends Component {
               <p className="season-title">Season</p>
               <p>Month 3</p>
             </div>
-            {/* <div className="hover-container">
-              {this.state.isHovering && <div>Hovering right meow! 🐱</div>}
-              <p>display</p>
-              {this.state.hover}
-            </div> */}
             <div className="location-container">
               <p>Curiosity Rover</p>
               <span className="location-logo">&#9672;</span>
