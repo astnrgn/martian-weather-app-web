@@ -36,8 +36,9 @@ class Curiosity extends Component {
               <p>Gale Crater</p>
               {/* <p>Days on Mars: {this.props.curiosityData[0].sol} martian days</p> */}
               <p>
-                <span className="days-on-mars">Days on Mars</span>: 2503 Sol
+                <span className="days-on-mars">Days on Mars</span>:
               </p>
+              <p>2503 Sol</p>
               <a
                 className="more-info-link"
                 href="https://mars.jpl.nasa.gov/msl/"

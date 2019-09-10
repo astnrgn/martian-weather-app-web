@@ -3,7 +3,7 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../images//curiosity.jpeg");
+  background: url("../images/curiosity.jpeg");
   color: #fbf7f5;
   background-repeat: repeat-x;
   animation: animatedBackground 40s linear infinite;
