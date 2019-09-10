@@ -20,19 +20,19 @@ class Curiosity extends Component {
       <div className="curiosity-page">
         <div className="weather-display-flex">
           <div className="weather-display-grid">
-            {/* <h1>{this.props.curiosityData[0].season}</h1> */}
             <div className="season-container">
               <p className="season-title">Season</p>
+              {/* <p>{this.props.curiosityData[0].season}</p> */}
               <p>Month 3</p>
             </div>
             <div className="location-container">
               <p>Curiosity Rover</p>
               <span className="location-logo">&#9672;</span>
               <p>Gale Crater</p>
-              {/* <p>Days on Mars: {this.props.curiosityData[0].sol} martian days</p> */}
               <p>
                 <span className="days-on-mars">Days on Mars</span>:
               </p>
+              {/* <p>{this.props.curiosityData[0].sol} Sol</p> */}
               <p>2503 Sol</p>
               <a
                 className="more-info-link"
