@@ -54,24 +54,9 @@ class App extends Component {
         console.error(err);
       });
   }
-
   render() {
     return (
       <div className="page">
-        {/* <nav>
-          <Link to="/">
-            <div className="home-logo-container">
-              <p className="home-logo">|-|</p>
-            </div>
-          </Link> */}
-
-        {/* <Link to="/curiosity">
-            <h3>Curiosity</h3>
-          </Link>
-          <Link to="/insight">
-            <h3>InSight</h3>
-          </Link> */}
-        {/* </nav> */}
         <main>
           <Route path="/" exact component={Home} />
           <Route
