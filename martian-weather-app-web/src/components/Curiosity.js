@@ -19,6 +19,7 @@ class Curiosity extends Component {
             </div>
           );
         }
+        return null;
       });
     return (
       <div className="curiosity-page">
@@ -42,6 +43,7 @@ class Curiosity extends Component {
                 className="links"
                 href="https://mars.jpl.nasa.gov/msl/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 [More Info]
               </a>

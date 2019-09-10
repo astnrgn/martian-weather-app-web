@@ -18,6 +18,7 @@ class Insight extends Component {
           </div>
         );
       }
+      return null;
     });
     return (
       <div className="insight-page">
@@ -47,6 +48,7 @@ class Insight extends Component {
                 className="links"
                 href="https://mars.nasa.gov/insight/weather/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 [More Info]
               </a>
