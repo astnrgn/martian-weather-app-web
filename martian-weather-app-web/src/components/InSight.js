@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import "../styling/InSight.css";
 
 class Insight extends Component {
+  // let databaseCollections = res.map((list, key) => {
+  //   let x = {
+  //     minimumTemp: list[key].AT.mn,
+  //     minimumTemp: list[key].AT.mn,
+  //     minimumTemp: list[key].AT.mn,
+  //   };
+  //   return x;
+  // }
   render() {
     let insightWeather = this.props.inSightData.map((day, index) => {
       if (index <= 6) {

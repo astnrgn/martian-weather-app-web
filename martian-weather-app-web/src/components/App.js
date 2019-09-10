@@ -34,10 +34,19 @@ class App extends Component {
     axios
       .get(inSightSearchUrl)
       .then(response => {
-        console.log(response.data[265].AT.av);
-        console.log(response.data.JSO);
+        let sol = response.data.sol_keys;
+        let newInsightData = sol.map(solNumber => {
+          let formattedData = {
+            martianDate: solNumber,
+            earthDate: response.data[solNumber].First_UTC,
+            season: response.data[solNumber].Season,
+            maxTemp: response.data[solNumber].AT.mx,
+            minTemp: response.data[solNumber].AT.mn
+          };
+          return formattedData;
+        });
         this.setState({
-          inSightWeather: response.data
+          inSightWeather: newInsightData
         });
         console.log(this.state.inSightWeather);
       })
@@ -45,6 +54,7 @@ class App extends Component {
         console.error(err);
       });
   }
+
   render() {
     return (
       <div className="page">
