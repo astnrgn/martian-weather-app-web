@@ -5,19 +5,18 @@
   width: 100vw;
   height: 100vh;
   color: #fbf7f5;
-  background-position: center;
-  background-size: cover;
-  background-repeat: center;
-  background-repeat: repeat-x;
-  animation: animatedBackground 40s linear infinite;
 }
 .insight-page {
-  background: url("../images/insight.jpeg");
-  /* background: black; */
+  background: url("../images/mars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .curiosity-page {
-  background: url("../images/curiosity.jpeg");
-  /* background: black; */
+  background: url("../images/mars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .weather-display-flex {
   display: flex;
@@ -96,11 +95,11 @@
   text-decoration: underline;
 }
 
-@keyframes animatedBackground {
+/* @keyframes animatedBackground {
   from {
     background-position: 0 0;
   }
   to {
     background-position: 100% 0;
   }
-}
+} */
