@@ -24,7 +24,6 @@
   padding: 2vh 0 0;
 }
 .weather-display-grid {
-  /* border: 3px solid #fbf7f5; */
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -36,12 +35,10 @@
 }
 .insight-weather-divs,
 .curiosity-weather-divs {
-  /* border: 1px solid black; */
   text-align: center;
   padding: 3% 3%;
 }
 .season-container {
-  /* border: 1px solid black; */
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   text-transform: capitalize;
@@ -50,12 +47,10 @@
   text-decoration: underline;
 }
 .hover-container {
-  /* border: 1px solid black; */
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
 }
 .location-container {
-  /* border: 1px solid black; */
   grid-row: 1 / span 3;
   grid-column: 3 / span 1;
 }
@@ -94,12 +89,3 @@
 .days-on-mars {
   text-decoration: underline;
 }
-
-/* @keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-} */
