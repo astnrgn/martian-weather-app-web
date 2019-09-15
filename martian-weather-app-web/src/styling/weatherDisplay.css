@@ -29,7 +29,7 @@
   justify-content: center;
   padding: 2vh 5vw;
   display: grid;
-  grid-template-rows: 10vh 5vh 15vh 30vh 25vh 5vh;
+  grid-template-rows: 10vh 5vh 15vh 30vh 25vh;
   grid-template-columns: 10vw 65vw 20vh;
   text-align: center;
 }
@@ -45,6 +45,7 @@
 }
 .season-title {
   text-decoration: underline;
+  font-size: 1.5em;
 }
 .hover-container {
   grid-row: 3 / span 1;
@@ -60,7 +61,7 @@
 .links {
   text-decoration: none;
   color: #fbf7f5;
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 .links:hover {
   color: black;
@@ -79,13 +80,21 @@
 .sol-number,
 .max-temp {
   font-weight: bolder;
+  font-size: 1.35em;
 }
 .earth-date {
-  font-size: 0.6em;
+  font-size: 0.7em;
+}
+.max-temp {
+  font-size: 1.4em;
 }
 .min-temp {
-  font-size: 0.7em;
+  font-size: 0.8em;
+}
+.instrument-info {
+  font-size: 1.2em;
 }
 .days-on-mars {
   text-decoration: underline;
+  font-size: 1em;
 }
