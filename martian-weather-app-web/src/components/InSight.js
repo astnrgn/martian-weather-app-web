@@ -30,13 +30,13 @@ class Insight extends Component {
               <p>winter</p>
             </div>
             <div className="location-container">
-              <p>InSight Lander</p>
+              <p className="instrument-info">InSight Lander</p>
               <span className="location-logo">&#9672;</span>
-              <p>Elysium Planitia</p>
+              <p className="instrument-info">Elysium Planitia</p>
               <p>
                 <span className="days-on-mars">Days on Mars</span>:
               </p>
-              <p>
+              <p className="instrument-info">
                 {/* {" "}
                 {
                   this.props.inSightData[this.props.inSightData.length - 1]
