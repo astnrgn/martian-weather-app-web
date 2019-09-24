@@ -24,7 +24,7 @@ Updates to the Curiosity database can occur daily, while the InSight database is
 | :------: | :------------------------------------------------------------------------: |
 |   Sol    |                    Number of martian days since landing                    |
 |  Earth   |                        Corresponding date on Earth                         |
-|   H /F   | High and low temperatures in Fahrenheit (more in possible future releases) |
+|   H / L  | High and low temperatures in Fahrenheit (more in possible future releases) |
 
 <br/><br/>
 
