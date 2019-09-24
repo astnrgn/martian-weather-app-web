@@ -26,8 +26,8 @@ class Insight extends Component {
           <div className="weather-display-grid">
             <div className="season-container">
               <p className="season-title">Season</p>
-              {/* {this.props.inSightData[this.props.inSightData.length - 1].season} */}
-              <p>winter</p>
+              {this.props.inSightData[this.props.inSightData.length - 1].season}
+              {/* <p>winter</p> */}
             </div>
             <div className="location-container">
               <p className="instrument-info">InSight Lander</p>
@@ -37,11 +37,11 @@ class Insight extends Component {
                 <span className="days-on-mars">Days on Mars</span>:
               </p>
               <p className="instrument-info">
-                {/* {" "}
+                {" "}
                 {
                   this.props.inSightData[this.props.inSightData.length - 1]
                     .martianDate
-                }{" "} */}
+                }{" "}
                 Sol
               </p>
               <a
@@ -53,7 +53,7 @@ class Insight extends Component {
                 [More Info]
               </a>
               <Link className="links" to="/">
-                <p>- Home - </p>
+                <p>- Home -</p>
               </Link>
             </div>
             <div className="weather-list">

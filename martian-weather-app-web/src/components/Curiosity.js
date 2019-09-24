@@ -27,8 +27,8 @@ class Curiosity extends Component {
           <div className="weather-display-grid">
             <div className="season-container">
               <p className="season-title">Season</p>
-              {/* <p>{this.props.curiosityData[0].season}</p> */}
-              <p>Month 3</p>
+              <p>{this.props.curiosityData[0].season}</p>
+              {/* <p>Month 3</p> */}
             </div>
             <div className="location-container">
               <p className="instrument-info">Curiosity Rover</p>
@@ -37,8 +37,8 @@ class Curiosity extends Component {
               <p>
                 <span className="days-on-mars">Days on Mars</span>:
               </p>
-              {/* <p>{this.props.curiosityData[0].sol} Sol</p> */}
-              <p className="instrument-info">2503 Sol</p>
+              <p>{this.props.curiosityData[0].sol} Sol</p>
+              {/* <p className="instrument-info">2503 Sol</p> */}
               <a
                 className="links"
                 href="https://mars.jpl.nasa.gov/msl/"

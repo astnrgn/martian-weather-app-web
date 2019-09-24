@@ -23,10 +23,21 @@ class App extends Component {
     axios
       .get(curiositySearchUrl)
       .then(response => {
+        let newCuriosityData = response.data.map(solNumber => {
+          let formattedData = {
+            sol: solNumber.sol,
+            terrestrial_date: solNumber.terrestrial_date,
+            max_temp: solNumber.max_temp,
+            min_temp: solNumber.min_temp,
+            season: solNumber.season
+          };
+          return formattedData;
+        });
         this.setState({
-          curiosityWeather: response.data
+          curiosityWeather: newCuriosityData
         });
         console.log(this.state.curiosityWeather);
+        console.log(this.state.trigger);
       })
       .catch(err => {
         console.error(err);
